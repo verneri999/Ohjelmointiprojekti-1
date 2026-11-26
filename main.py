@@ -29,4 +29,4 @@ ika = kysy_ika()
 
 pelaaja = Pelaaja(nimi, ika)
 pelaaja.tallenna()
-print("Tervetuloa", pelaaja.nimi)
+print("Tervetuloa!", pelaaja.nimi)

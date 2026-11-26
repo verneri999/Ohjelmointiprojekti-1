@@ -23,6 +23,27 @@ def kysy_ika():
             exit()
         return ika
 
+def ohjeet():
+    print("Pelin ohjeet...")
+
+def aloita_peli(pelaaja):
+    print("")
+
+#päävalikon vaihtoehdot
+def paavalikko(pelaaja):
+    while True:
+        print()
+        print("1. Uusi peli")
+        print("2. ohjeet")
+        print("3. Aijemmat tulokset")
+        print("4. lopeta")
+        valinta = input("Valitse: ")
+
+        if valinta == "1":
+            aloita_peli(pelaaja)
+        elif valinta == "2":
+            ohjeet(pelaaja)
+
 
 nimi = input("Nimi: ")
 ika = kysy_ika()
@@ -30,3 +51,5 @@ ika = kysy_ika()
 pelaaja = Pelaaja(nimi, ika)
 pelaaja.tallenna()
 print("Tervetuloa!", pelaaja.nimi)
+paavalikko(pelaaja)
+
